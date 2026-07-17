@@ -15,7 +15,7 @@ function Logo() {
         <path d="M8 16 V26 H24 V16" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
         <circle cx="16" cy="21" r="2" fill="var(--ember)" />
       </svg>
-      <span className="font-display text-lg font-semibold tracking-tight">Everlast</span>
+      <span className="font-display text-lg font-semibold tracking-tight">Midwest Roof Renewal</span>
     </div>
   );
 }
@@ -254,7 +254,7 @@ function Testimonial() {
       <div className="mx-auto max-w-4xl px-6 text-center">
         <p className="text-xs uppercase tracking-[0.25em] text-[var(--ember)] font-medium">Homeowners</p>
         <blockquote className="mt-8 font-display text-3xl md:text-5xl leading-tight text-balance">
-          <span className="text-[var(--ember)]">“</span>My insurance was going to drop me over roof age. Everlast came out on a Tuesday, and by Friday my policy was renewed. Saved me from a $22,000 replacement.<span className="text-[var(--ember)]">”</span>
+          <span className="text-[var(--ember)]">“</span>My insurance was going to drop me over roof age. Midwest Roof Renewal came out on a Tuesday, and by Friday my policy was renewed. Saved me from a $22,000 replacement.<span className="text-[var(--ember)]">”</span>
         </blockquote>
         <div className="mt-10 flex items-center justify-center gap-4">
           <div className="h-12 w-12 rounded-full bg-gradient-sunset" />
@@ -364,7 +364,7 @@ function Footer() {
           <div className="text-xs uppercase tracking-widest text-white/50">Contact</div>
           <ul className="mt-4 space-y-2 text-sm text-white/80">
             <li>(800) 555-0142</li>
-            <li>hello@everlastroof.com</li>
+            <li>hello@midwestroofrenewal.com</li>
             <li>Mon–Sat · 7am–7pm</li>
           </ul>
         </div>
@@ -379,7 +379,7 @@ function Footer() {
       </div>
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-6 flex justify-between text-xs text-white/50">
-          <span>© {new Date().getFullYear()} Everlast Roof Rejuvenation</span>
+          <span>© {new Date().getFullYear()} Midwest Roof Renewal</span>
           <span>Built to outlast the weather.</span>
         </div>
       </div>
