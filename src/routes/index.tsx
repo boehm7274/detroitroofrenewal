@@ -181,7 +181,7 @@ function HowItWorks() {
               Four steps. One roof. Fifteen more years.
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              Our applicators are trained, insured, and OSHA-certified. Every scan uses up-to-date Google Maps satellite imagery — in-person drone or ladder inspections are available for a fee. Every job is documented with before/after imagery you keep for your records.
+              Our applicators are trained and insured. Every scan uses up-to-date Google Maps satellite imagery — paid in-person ladder inspections are available on request. Every job is documented with before/after imagery you keep for your records.
             </p>
             <div className="mt-10 overflow-hidden rounded-2xl border border-border">
               <img
