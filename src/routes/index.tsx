@@ -83,7 +83,7 @@ function Hero() {
             {[
               { k: "15 yrs", v: "Extra roof life" },
               { k: "85%", v: "Cheaper than replace" },
-              { k: "5 yr", v: "Written warranty" },
+              { k: "1 day", v: "Application time" },
             ].map((s) => (
               <div key={s.k}>
                 <dt className="font-display text-3xl md:text-4xl text-[var(--ember)]">{s.k}</dt>
@@ -216,7 +216,7 @@ function Compare() {
     ["Cost for 2,500 sq ft home", "$2,500 avg", "$18,000+"],
     ["Time on site", "2–3 hours", "3–5 days"],
     ["Tear-off waste to landfill", "Zero", "~5 tons"],
-    ["Warranty", "5 years", "Varies"],
+    
     ["Homeowner disruption", "Minimal", "High"],
   ];
   return (
