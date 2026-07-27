@@ -68,7 +68,7 @@ function Hero() {
             <span className="italic text-[var(--ember)]">Rejuvenate</span> it.
           </h1>
           <p className="mt-6 max-w-xl text-lg text-white/80 leading-relaxed">
-            One spray restores the flexibility and waterproofing of aging asphalt shingles — adding up to 15 years of life for a fraction of the cost of tear-off.
+            One spray restores the flexibility and waterproofing of aging asphalt shingles — adding 5–10 years of life for a fraction of the cost of tear-off.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a href="#quote" className="rounded-full bg-[var(--ember)] px-7 py-4 text-sm font-semibold text-[var(--ember-foreground)] shadow-warm hover:brightness-110 transition">
