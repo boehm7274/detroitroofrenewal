@@ -372,7 +372,7 @@ function Footer() {
           <div className="text-xs uppercase tracking-widest text-white/50">Certifications</div>
           <ul className="mt-4 space-y-2 text-sm text-white/80">
             <li>EPA Safer Choice</li>
-            <li>OSHA-30 Certified</li>
+            <li>Licensed & Insured</li>
             <li>BBB Accredited · A+</li>
           </ul>
         </div>
