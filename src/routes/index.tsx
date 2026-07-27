@@ -168,8 +168,8 @@ function HowItWorks() {
   const steps = [
     { n: "01", t: "Free satellite roof scan", d: "We pull high-resolution Google Maps satellite imagery of your home and grade every slope remotely — no ladder, no one on your property, no sales pressure. In-person inspections are available as a paid add-on." },
     { n: "02", t: "Precision spray application", d: "A certified tech applies our bio-based formula in a fine, even mist. Done in 2–3 hours." },
-    { n: "03", t: "Cure & protect", d: "The treatment absorbs into the asphalt in under 90 minutes, restoring flexibility for 5+ years." },
-    { n: "04", t: "Reapply every 5 years", d: "Three treatments over 15 years cost less than half of one replacement." },
+    { n: "03", t: "Cure & protect", d: "The treatment absorbs into the asphalt in under 90 minutes, restoring flexibility for 5–10 years." },
+    { n: "04", t: "Reapply as needed", d: "Repeat treatments over the roof's life cost a fraction of a single replacement." },
   ];
   return (
     <section id="how" className="bg-background py-24 md:py-32">
