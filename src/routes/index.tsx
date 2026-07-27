@@ -357,7 +357,7 @@ function Footer() {
         <div className="md:col-span-2">
           <div className="text-primary-foreground"><Logo /></div>
           <p className="mt-4 max-w-sm text-sm text-white/60 leading-relaxed">
-            Extending the life of America's asphalt roofs — one shingle at a time. Licensed & insured in 14 states.
+            Extending the life of America's asphalt roofs — one shingle at a time. Licensed & insured in Michigan.
           </p>
         </div>
         <div>
@@ -372,8 +372,7 @@ function Footer() {
           <div className="text-xs uppercase tracking-widest text-white/50">Certifications</div>
           <ul className="mt-4 space-y-2 text-sm text-white/80">
             <li>Environmentally Safer Choice</li>
-            <li>Licensed & Insured</li>
-            <li>BBB Accredited · A+</li>
+            <li>Licensed & Insured in Michigan</li>
           </ul>
         </div>
       </div>
