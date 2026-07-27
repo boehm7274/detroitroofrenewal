@@ -363,7 +363,7 @@ function Footer() {
         <div>
           <div className="text-xs uppercase tracking-widest text-white/50">Contact</div>
           <ul className="mt-4 space-y-2 text-sm text-white/80">
-            <li>(800) 555-0142</li>
+            <li>(810) 294-4909</li>
             <li>hello@detroitroofrenewal.com</li>
             <li>Mon–Sat · 7am–7pm</li>
           </ul>
