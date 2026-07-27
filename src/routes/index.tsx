@@ -271,7 +271,7 @@ function Testimonial() {
 function FAQ() {
   const faqs = [
     { q: "Does the spray actually work, or is it a coating?", a: "It's not a coating — coatings sit on top and eventually peel. Our treatment is a bio-based penetrating agent that soaks into the asphalt and replaces the maltenes (oils) that UV has cooked out over the years." },
-    { q: "Is it safe for my kids, pets, and landscaping?", a: "Yes. The formula is soy-based, biodegradable, and carries an EPA Safer Choice designation. There's no toxic runoff, so your plants, pets, and family stay safe." },
+    { q: "Is it safe for my kids, pets, and landscaping?", a: "Yes. The formula is soy-based, biodegradable, and carries an Environmentally Safer Choice designation. There's no toxic runoff, so your plants, pets, and family stay safe." },
     { q: "What if my roof is too far gone?", a: "During the free satellite scan we grade every slope using Google Maps imagery. If your shingles are cracked-through or missing granules to the mat, we'll tell you honestly — no treatment, no charge. Prefer eyes-on-the-roof? A paid in-person inspection is available." },
     { q: "How long does a treatment last?", a: "5 years, guaranteed in writing. Most homeowners re-treat every 5 years and get 15+ extra years out of the original roof." },
   ];
@@ -371,7 +371,7 @@ function Footer() {
         <div>
           <div className="text-xs uppercase tracking-widest text-white/50">Certifications</div>
           <ul className="mt-4 space-y-2 text-sm text-white/80">
-            <li>EPA Safer Choice</li>
+            <li>Environmentally Safer Choice</li>
             <li>Licensed & Insured</li>
             <li>BBB Accredited · A+</li>
           </ul>
