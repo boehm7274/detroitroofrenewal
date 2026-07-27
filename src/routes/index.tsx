@@ -35,7 +35,7 @@ function Nav() {
           href="#quote"
           className="inline-flex items-center gap-2 rounded-full bg-[var(--ember)] px-5 py-2.5 text-sm font-medium text-[var(--ember-foreground)] shadow-warm hover:brightness-110 transition"
         >
-          Free roof scan →
+          Free satellite roof scan →
         </a>
       </div>
     </header>
@@ -72,7 +72,7 @@ function Hero() {
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a href="#quote" className="rounded-full bg-[var(--ember)] px-7 py-4 text-sm font-semibold text-[var(--ember-foreground)] shadow-warm hover:brightness-110 transition">
-              Get my free roof scan
+              Get my free satellite scan
             </a>
             <a href="#how" className="rounded-full border border-white/25 px-7 py-4 text-sm font-medium hover:bg-white/10 transition">
               See how it works
@@ -166,7 +166,7 @@ function BeforeAfter() {
 
 function HowItWorks() {
   const steps = [
-    { n: "01", t: "Drone roof scan", d: "We fly your roof and grade every slope — no ladder, no sales pressure." },
+    { n: "01", t: "Free satellite roof scan", d: "We pull high-resolution Google Maps satellite imagery of your home and grade every slope remotely — no ladder, no one on your property, no sales pressure. In-person inspections are available as a paid add-on." },
     { n: "02", t: "Precision spray application", d: "A certified tech applies our bio-based formula in a fine, even mist. Done in 2–3 hours." },
     { n: "03", t: "Cure & protect", d: "The treatment absorbs into the asphalt in under 90 minutes, restoring flexibility for 5+ years." },
     { n: "04", t: "Reapply every 5 years", d: "Three treatments over 15 years cost less than half of one replacement." },
@@ -181,7 +181,7 @@ function HowItWorks() {
               Four steps. One roof. Fifteen more years.
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              Our applicators are trained, insured, and OSHA-certified. Every job is documented with before/after drone imagery you keep for your records.
+              Our applicators are trained, insured, and OSHA-certified. Every scan uses up-to-date Google Maps satellite imagery — in-person drone or ladder inspections are available for a fee. Every job is documented with before/after imagery you keep for your records.
             </p>
             <div className="mt-10 overflow-hidden rounded-2xl border border-border">
               <img
@@ -272,7 +272,7 @@ function FAQ() {
   const faqs = [
     { q: "Does the spray actually work, or is it a coating?", a: "It's not a coating — coatings sit on top and eventually peel. Our treatment is a bio-based penetrating agent that soaks into the asphalt and replaces the maltenes (oils) that UV has cooked out over the years." },
     { q: "Is it safe for my kids, pets, and landscaping?", a: "Yes. The formula is soy-based, biodegradable, and carries an EPA Safer Choice designation. We tarp beds as a courtesy, but there's no toxic runoff." },
-    { q: "What if my roof is too far gone?", a: "During the free drone scan we grade every slope. If your shingles are cracked-through or missing granules to the mat, we'll tell you honestly — no treatment, no charge." },
+    { q: "What if my roof is too far gone?", a: "During the free satellite scan we grade every slope using Google Maps imagery. If your shingles are cracked-through or missing granules to the mat, we'll tell you honestly — no treatment, no charge. Prefer eyes-on-the-roof? A paid in-person inspection is available." },
     { q: "How long does a treatment last?", a: "5 years, guaranteed in writing. Most homeowners re-treat every 5 years and get 15+ extra years out of the original roof." },
   ];
   return (
@@ -308,12 +308,12 @@ function CTA() {
           <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-gradient-sunset opacity-40 blur-3xl" aria-hidden />
           <div className="relative grid md:grid-cols-12 gap-10 items-end">
             <div className="md:col-span-7">
-              <p className="text-xs uppercase tracking-[0.25em] text-[var(--ember)] font-medium">Free roof scan</p>
+              <p className="text-xs uppercase tracking-[0.25em] text-[var(--ember)] font-medium">Free satellite scan</p>
               <h2 className="mt-4 font-display text-4xl md:text-6xl leading-[1] text-balance">
                 See if your roof qualifies.
               </h2>
               <p className="mt-6 max-w-md text-white/75 leading-relaxed">
-                A drone, 20 minutes, and a straight answer. No sales visit, no upsell. If your roof isn't a candidate, we'll say so.
+                We pull satellite imagery of your address, grade every slope, and send a straight answer — no one steps on your property. In-person inspections available as a paid add-on.
               </p>
             </div>
             <form className="md:col-span-5 space-y-3" onSubmit={(e) => e.preventDefault()}>
@@ -339,7 +339,7 @@ function CTA() {
                 type="submit"
                 className="w-full rounded-full bg-[var(--ember)] px-6 py-4 text-sm font-semibold text-[var(--ember-foreground)] shadow-warm hover:brightness-110 transition"
               >
-                Book my free roof scan →
+                Book my free satellite scan →
               </button>
               <p className="text-xs text-white/50 text-center">No obligation. Report in 48 hours.</p>
             </form>
