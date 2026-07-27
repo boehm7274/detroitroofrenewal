@@ -254,7 +254,7 @@ function Testimonial() {
       <div className="mx-auto max-w-4xl px-6 text-center">
         <p className="text-xs uppercase tracking-[0.25em] text-[var(--ember)] font-medium">Homeowners</p>
         <blockquote className="mt-8 font-display text-3xl md:text-5xl leading-tight text-balance">
-          <span className="text-[var(--ember)]">“</span>My insurance was going to drop me over roof age. Midwest Roof Renewal came out on a Tuesday, and by Friday my policy was renewed. Saved me from a $22,000 replacement.<span className="text-[var(--ember)]">”</span>
+          <span className="text-[var(--ember)]">“</span>My roof shingles went from cracking and dried out to brand new in a matter of hours, and it cost a fraction of what a completely new roof would cost.<span className="text-[var(--ember)]">”</span>
         </blockquote>
         <div className="mt-10 flex items-center justify-center gap-4">
           <div className="h-12 w-12 rounded-full bg-gradient-sunset" />
