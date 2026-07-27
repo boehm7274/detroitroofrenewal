@@ -178,7 +178,7 @@ function HowItWorks() {
           <div className="lg:col-span-5">
             <p className="text-xs uppercase tracking-[0.25em] text-[var(--ember)] font-medium">How it works</p>
             <h2 className="mt-4 font-display text-4xl md:text-5xl leading-tight text-balance">
-              Four steps. One roof. Fifteen more years.
+              Four steps. One roof. Years more life.
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
               Our applicators are trained and insured. Every scan uses up-to-date Google Maps satellite imagery — paid in-person ladder inspections are available on request. Every job is documented with before/after imagery you keep for your records.
