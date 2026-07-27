@@ -68,7 +68,7 @@ function Hero() {
             <span className="italic text-[var(--ember)]">Rejuvenate</span> it.
           </h1>
           <p className="mt-6 max-w-xl text-lg text-white/80 leading-relaxed">
-            One spray restores the flexibility and waterproofing of aging asphalt shingles — adding up to 15 years of life for a fraction of the cost of tear-off.
+            One spray restores the flexibility and waterproofing of aging asphalt shingles — adding 5–10 years of life for a fraction of the cost of tear-off.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a href="#quote" className="rounded-full bg-[var(--ember)] px-7 py-4 text-sm font-semibold text-[var(--ember-foreground)] shadow-warm hover:brightness-110 transition">
@@ -81,7 +81,7 @@ function Hero() {
 
           <dl className="mt-16 grid grid-cols-3 gap-8 max-w-2xl border-t border-white/15 pt-8">
             {[
-              { k: "15 yrs", v: "Extra roof life" },
+              { k: "5–10 yrs", v: "Extra roof life" },
               { k: "85%", v: "Cheaper than replace" },
               { k: "1 day", v: "Application time" },
             ].map((s) => (
@@ -168,8 +168,8 @@ function HowItWorks() {
   const steps = [
     { n: "01", t: "Free satellite roof scan", d: "We pull high-resolution Google Maps satellite imagery of your home and grade every slope remotely — no ladder, no one on your property, no sales pressure. In-person inspections are available as a paid add-on." },
     { n: "02", t: "Precision spray application", d: "A certified tech applies our bio-based formula in a fine, even mist. Done in 2–3 hours." },
-    { n: "03", t: "Cure & protect", d: "The treatment absorbs into the asphalt in under 90 minutes, restoring flexibility for 5+ years." },
-    { n: "04", t: "Reapply every 5 years", d: "Three treatments over 15 years cost less than half of one replacement." },
+    { n: "03", t: "Cure & protect", d: "The treatment absorbs into the asphalt in under 90 minutes, restoring flexibility for 5–10 years." },
+    { n: "04", t: "Reapply as needed", d: "Repeat treatments over the roof's life cost a fraction of a single replacement." },
   ];
   return (
     <section id="how" className="bg-background py-24 md:py-32">
@@ -178,7 +178,7 @@ function HowItWorks() {
           <div className="lg:col-span-5">
             <p className="text-xs uppercase tracking-[0.25em] text-[var(--ember)] font-medium">How it works</p>
             <h2 className="mt-4 font-display text-4xl md:text-5xl leading-tight text-balance">
-              Four steps. One roof. Fifteen more years.
+              Four steps. One roof. Years more life.
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
               Our applicators are trained and insured. Every scan uses up-to-date Google Maps satellite imagery — paid in-person ladder inspections are available on request. Every job is documented with before/after imagery you keep for your records.
@@ -273,7 +273,7 @@ function FAQ() {
     { q: "Does the spray actually work, or is it a coating?", a: "It's not a coating — coatings sit on top and eventually peel. Our treatment is a bio-based penetrating agent that soaks into the asphalt and replaces the maltenes (oils) that UV has cooked out over the years." },
     { q: "Is it safe for my kids, pets, and landscaping?", a: "Yes. The formula is soy-based, biodegradable, and carries an Environmentally Safer Choice designation. There's no toxic runoff, so your plants, pets, and family stay safe." },
     { q: "What if my roof is too far gone?", a: "During the free satellite scan we grade every slope using Google Maps imagery. If your shingles are cracked-through or missing granules to the mat, we'll tell you honestly — no treatment, no charge. Prefer eyes-on-the-roof? A paid in-person inspection is available." },
-    { q: "How long does a treatment last?", a: "5 years, guaranteed in writing. Most homeowners re-treat every 5 years and get 15+ extra years out of the original roof." },
+    { q: "How long does a treatment last?", a: "5–10 years, depending on your roof's exposure and condition. Most homeowners re-treat within that window to keep their shingles flexible and waterproof." },
   ];
   return (
     <section id="faq" className="bg-primary text-primary-foreground py-24 md:py-32">
