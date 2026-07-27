@@ -60,7 +60,7 @@ function Hero() {
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 backdrop-blur px-3 py-1 text-xs uppercase tracking-widest">
             <span className="h-1.5 w-1.5 rounded-full bg-[var(--ember)]" />
-            Bio-based shingle treatment · EPA safe
+            Bio-based shingle treatment · Environmentally safe
           </div>
           <h1 className="mt-6 font-display text-5xl md:text-7xl lg:text-8xl font-medium leading-[0.95] text-balance">
             Don't replace it.
