@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Midwest Roof Renewal — Add 15 Years to Your Shingles" },
+      { title: "Detroit Roof Renewal — Add 15 Years to Your Shingles" },
       {
         name: "description",
         content:
           "Professional asphalt shingle rejuvenation spray. Restore flexibility, prevent granule loss, and extend your roof's life for a fraction of replacement cost.",
       },
-      { name: "author", content: "Midwest Roof Renewal" },
-      { property: "og:title", content: "Midwest Roof Renewal — Add 15 Years to Your Shingles" },
+      { name: "author", content: "Detroit Roof Renewal" },
+      { property: "og:title", content: "Detroit Roof Renewal — Add 15 Years to Your Shingles" },
       {
         property: "og:description",
         content:
