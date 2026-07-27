@@ -259,8 +259,8 @@ function Testimonial() {
         <div className="mt-10 flex items-center justify-center gap-4">
           <div className="h-12 w-12 rounded-full bg-gradient-sunset" />
           <div className="text-left">
-            <div className="font-semibold">Marta Chen</div>
-            <div className="text-sm text-muted-foreground">Homeowner · Overland Park, KS</div>
+            <div className="font-semibold">Chris</div>
+            <div className="text-sm text-muted-foreground">Homeowner · Chesterfield, MI</div>
           </div>
         </div>
       </div>
