@@ -15,7 +15,7 @@ function Logo() {
         <path d="M8 16 V26 H24 V16" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
         <circle cx="16" cy="21" r="2" fill="var(--ember)" />
       </svg>
-      <span className="font-display text-lg font-semibold tracking-tight">Midwest Roof Renewal</span>
+      <span className="font-display text-lg font-semibold tracking-tight">Detroit Roof Renewal</span>
     </div>
   );
 }
@@ -364,7 +364,7 @@ function Footer() {
           <div className="text-xs uppercase tracking-widest text-white/50">Contact</div>
           <ul className="mt-4 space-y-2 text-sm text-white/80">
             <li>(800) 555-0142</li>
-            <li>hello@midwestroofrenewal.com</li>
+            <li>hello@detroitroofrenewal.com</li>
             <li>Mon–Sat · 7am–7pm</li>
           </ul>
         </div>
@@ -378,7 +378,7 @@ function Footer() {
       </div>
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-6 flex justify-between text-xs text-white/50">
-          <span>© {new Date().getFullYear()} Midwest Roof Renewal</span>
+          <span>© {new Date().getFullYear()} Detroit Roof Renewal</span>
           <span>Built to outlast the weather.</span>
         </div>
       </div>
