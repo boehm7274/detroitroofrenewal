@@ -81,7 +81,7 @@ function Hero() {
 
           <dl className="mt-16 grid grid-cols-3 gap-8 max-w-2xl border-t border-white/15 pt-8">
             {[
-              { k: "15 yrs", v: "Extra roof life" },
+              { k: "5–10 yrs", v: "Extra roof life" },
               { k: "85%", v: "Cheaper than replace" },
               { k: "1 day", v: "Application time" },
             ].map((s) => (
