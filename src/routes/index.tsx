@@ -273,7 +273,7 @@ function FAQ() {
     { q: "Does the spray actually work, or is it a coating?", a: "It's not a coating — coatings sit on top and eventually peel. Our treatment is a bio-based penetrating agent that soaks into the asphalt and replaces the maltenes (oils) that UV has cooked out over the years." },
     { q: "Is it safe for my kids, pets, and landscaping?", a: "Yes. The formula is soy-based, biodegradable, and carries an Environmentally Safer Choice designation. There's no toxic runoff, so your plants, pets, and family stay safe." },
     { q: "What if my roof is too far gone?", a: "During the free satellite scan we grade every slope using Google Maps imagery. If your shingles are cracked-through or missing granules to the mat, we'll tell you honestly — no treatment, no charge. Prefer eyes-on-the-roof? A paid in-person inspection is available." },
-    { q: "How long does a treatment last?", a: "5 years, guaranteed in writing. Most homeowners re-treat every 5 years and get 15+ extra years out of the original roof." },
+    { q: "How long does a treatment last?", a: "5–10 years, depending on your roof's exposure and condition. Most homeowners re-treat within that window to keep their shingles flexible and waterproof." },
   ];
   return (
     <section id="faq" className="bg-primary text-primary-foreground py-24 md:py-32">
