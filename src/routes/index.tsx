@@ -1,4 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
+import { toast } from "sonner";
+import { submitLead } from "@/lib/leads.functions";
 import heroRoof from "@/assets/hero-roof.jpg";
 import beforeAfter from "@/assets/before-after.jpg";
 import sprayAction from "@/assets/spray-action.jpg";
@@ -301,6 +304,33 @@ function FAQ() {
 }
 
 function CTA() {
+  const [form, setForm] = useState({ name: "", address: "", email: "" });
+  const [submitting, setSubmitting] = useState(false);
+  const [done, setDone] = useState(false);
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (submitting) return;
+    setSubmitting(true);
+    try {
+      await submitLead({ data: form });
+      setDone(true);
+      setForm({ name: "", address: "", email: "" });
+      toast.success("Request received", {
+        description: "We'll review your roof by satellite and email you within 48 hours.",
+      });
+    } catch (err) {
+      toast.error("Something went wrong", {
+        description: err instanceof Error ? err.message : "Please try again or call (810) 294-4909.",
+      });
+    } finally {
+      setSubmitting(false);
+    }
+  }
+
+  const inputClass =
+    "w-full rounded-full bg-white/10 border border-white/20 px-5 py-4 text-sm text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-[var(--ember)]";
+
   return (
     <section id="quote" className="relative overflow-hidden bg-background py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
@@ -316,39 +346,66 @@ function CTA() {
                 We pull satellite imagery of your address, grade every slope, and send a straight answer — no one steps on your property. In-person inspections available as a paid add-on.
               </p>
             </div>
-            <form className="md:col-span-5 space-y-3" onSubmit={(e) => e.preventDefault()}>
-              <input
-                type="text"
-                required
-                placeholder="Your name"
-                className="w-full rounded-full bg-white/10 border border-white/20 px-5 py-4 text-sm text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-[var(--ember)]"
-              />
-              <input
-                type="text"
-                required
-                placeholder="Property address"
-                className="w-full rounded-full bg-white/10 border border-white/20 px-5 py-4 text-sm text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-[var(--ember)]"
-              />
-              <input
-                type="email"
-                required
-                placeholder="Email"
-                className="w-full rounded-full bg-white/10 border border-white/20 px-5 py-4 text-sm text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-[var(--ember)]"
-              />
-              <button
-                type="submit"
-                className="w-full rounded-full bg-[var(--ember)] px-6 py-4 text-sm font-semibold text-[var(--ember-foreground)] shadow-warm hover:brightness-110 transition"
-              >
-                Book my free satellite scan →
-              </button>
-              <p className="text-xs text-white/50 text-center">No obligation. Report in 48 hours.</p>
-            </form>
+            {done ? (
+              <div className="md:col-span-5 rounded-3xl border border-white/20 bg-white/10 p-8 text-center">
+                <div className="font-display text-2xl">Request received.</div>
+                <p className="mt-3 text-sm text-white/70 leading-relaxed">
+                  We're pulling satellite imagery of your roof now. Expect your report by email within 48 hours.
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setDone(false)}
+                  className="mt-6 text-xs uppercase tracking-widest text-[var(--ember)] hover:brightness-110"
+                >
+                  Submit another address
+                </button>
+              </div>
+            ) : (
+              <form className="md:col-span-5 space-y-3" onSubmit={handleSubmit}>
+                <input
+                  type="text"
+                  required
+                  maxLength={100}
+                  value={form.name}
+                  onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))}
+                  placeholder="Your name"
+                  className={inputClass}
+                />
+                <input
+                  type="text"
+                  required
+                  maxLength={200}
+                  value={form.address}
+                  onChange={(e) => setForm((f) => ({ ...f, address: e.target.value }))}
+                  placeholder="Property address"
+                  className={inputClass}
+                />
+                <input
+                  type="email"
+                  required
+                  maxLength={255}
+                  value={form.email}
+                  onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))}
+                  placeholder="Email"
+                  className={inputClass}
+                />
+                <button
+                  type="submit"
+                  disabled={submitting}
+                  className="w-full rounded-full bg-[var(--ember)] px-6 py-4 text-sm font-semibold text-[var(--ember-foreground)] shadow-warm hover:brightness-110 transition disabled:opacity-60"
+                >
+                  {submitting ? "Sending…" : "Book my free satellite scan →"}
+                </button>
+                <p className="text-xs text-white/50 text-center">No obligation. Report in 48 hours.</p>
+              </form>
+            )}
           </div>
         </div>
       </div>
     </section>
   );
 }
+
 
 function Footer() {
   return (
