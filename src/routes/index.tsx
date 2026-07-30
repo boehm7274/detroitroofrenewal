@@ -1,4 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
+import { toast } from "sonner";
+import { submitLead } from "@/lib/leads.functions";
 import heroRoof from "@/assets/hero-roof.jpg";
 import beforeAfter from "@/assets/before-after.jpg";
 import sprayAction from "@/assets/spray-action.jpg";
