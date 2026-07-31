@@ -422,7 +422,7 @@ function Footer() {
           <ul className="mt-4 space-y-2 text-sm text-white/80">
             <li>(810) 294-4909</li>
             <li>hello@detroitroofrenewal.com</li>
-            <li>Mon–Sat · 7am–7pm</li>
+            <li>Mon–Sat · 10am–5pm</li>
           </ul>
         </div>
         <div>
