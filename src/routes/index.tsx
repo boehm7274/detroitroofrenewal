@@ -1,7 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
-import { toast } from "sonner";
-import { submitLead } from "@/lib/leads.functions";
 import heroRoof from "@/assets/hero-roof.jpg";
 import beforeAfter from "@/assets/before-after.jpg";
 import sprayAction from "@/assets/spray-action.jpg";
@@ -304,107 +301,66 @@ function FAQ() {
 }
 
 function CTA() {
-  const [form, setForm] = useState({ name: "", address: "", email: "" });
-  const [submitting, setSubmitting] = useState(false);
-  const [done, setDone] = useState(false);
-
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    if (submitting) return;
-    setSubmitting(true);
-    try {
-      await submitLead({ data: form });
-      setDone(true);
-      setForm({ name: "", address: "", email: "" });
-      toast.success("Request received", {
-        description: "We'll review your roof by satellite and email you within 48 hours.",
-      });
-    } catch (err) {
-      toast.error("Something went wrong", {
-        description: err instanceof Error ? err.message : "Please try again or call (810) 294-4909.",
-      });
-    } finally {
-      setSubmitting(false);
-    }
-  }
-
-  const inputClass =
-    "w-full rounded-full bg-white/10 border border-white/20 px-5 py-4 text-sm text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-[var(--ember)]";
+  const mailto =
+    "mailto:solutions@detroitroofrenewal.com?subject=" +
+    encodeURIComponent("Free satellite roof scan request") +
+    "&body=" +
+    encodeURIComponent(
+      "Name:\nProperty address:\nEmail:\n\n(Anything else we should know about your roof?)"
+    );
 
   return (
     <section id="quote" className="relative overflow-hidden bg-background py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-slate p-10 md:p-16 shadow-slate text-primary-foreground">
           <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-gradient-sunset opacity-40 blur-3xl" aria-hidden />
-          <div className="relative grid md:grid-cols-12 gap-10 items-end">
+          <div className="relative grid md:grid-cols-12 gap-10 items-center">
             <div className="md:col-span-7">
               <p className="text-xs uppercase tracking-[0.25em] text-[var(--ember)] font-medium">Free satellite scan</p>
               <h2 className="mt-4 font-display text-4xl md:text-6xl leading-[1] text-balance">
                 See if your roof qualifies.
               </h2>
               <p className="mt-6 max-w-md text-white/75 leading-relaxed">
-                We pull satellite imagery of your address, grade every slope, and send a straight answer — no one steps on your property. In-person inspections available as a paid add-on.
+                Call or email us with your <strong className="font-semibold text-white">name</strong>,{" "}
+                <strong className="font-semibold text-white">property address</strong>, and{" "}
+                <strong className="font-semibold text-white">email</strong>. We'll pull satellite imagery of
+                your roof, grade every slope, and send a straight answer within 48 hours — no one steps on
+                your property. In-person inspections available as a paid add-on.
               </p>
             </div>
-            {done ? (
-              <div className="md:col-span-5 rounded-3xl border border-white/20 bg-white/10 p-8 text-center">
-                <div className="font-display text-2xl">Request received.</div>
-                <p className="mt-3 text-sm text-white/70 leading-relaxed">
-                  We're pulling satellite imagery of your roof now. Expect your report by email within 48 hours.
-                </p>
-                <button
-                  type="button"
-                  onClick={() => setDone(false)}
-                  className="mt-6 text-xs uppercase tracking-widest text-[var(--ember)] hover:brightness-110"
-                >
-                  Submit another address
-                </button>
-              </div>
-            ) : (
-              <form className="md:col-span-5 space-y-3" onSubmit={handleSubmit}>
-                <input
-                  type="text"
-                  required
-                  maxLength={100}
-                  value={form.name}
-                  onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))}
-                  placeholder="Your name"
-                  className={inputClass}
-                />
-                <input
-                  type="text"
-                  required
-                  maxLength={200}
-                  value={form.address}
-                  onChange={(e) => setForm((f) => ({ ...f, address: e.target.value }))}
-                  placeholder="Property address"
-                  className={inputClass}
-                />
-                <input
-                  type="email"
-                  required
-                  maxLength={255}
-                  value={form.email}
-                  onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))}
-                  placeholder="Email"
-                  className={inputClass}
-                />
-                <button
-                  type="submit"
-                  disabled={submitting}
-                  className="w-full rounded-full bg-[var(--ember)] px-6 py-4 text-sm font-semibold text-[var(--ember-foreground)] shadow-warm hover:brightness-110 transition disabled:opacity-60"
-                >
-                  {submitting ? "Sending…" : "Book my free satellite scan →"}
-                </button>
-                <p className="text-xs text-white/50 text-center">No obligation. Report in 48 hours.</p>
-              </form>
-            )}
+
+            <div className="md:col-span-5 space-y-3">
+              <a
+                href="tel:+18102944909"
+                className="block rounded-3xl border border-white/20 bg-white/10 p-6 hover:bg-white/15 transition"
+              >
+                <div className="text-xs uppercase tracking-widest text-white/50">Call or text</div>
+                <div className="mt-2 font-display text-3xl">(810) 294-4909</div>
+                <div className="mt-1 text-sm text-white/60">Mon–Sat · 10am–5pm</div>
+              </a>
+              <a
+                href={mailto}
+                className="block rounded-3xl border border-white/20 bg-white/10 p-6 hover:bg-white/15 transition"
+              >
+                <div className="text-xs uppercase tracking-widest text-white/50">Email us</div>
+                <div className="mt-2 font-display text-xl break-words">solutions@detroitroofrenewal.com</div>
+                <div className="mt-1 text-sm text-white/60">Include your name, address & email</div>
+              </a>
+              <a
+                href={mailto}
+                className="block w-full rounded-full bg-[var(--ember)] px-6 py-4 text-center text-sm font-semibold text-[var(--ember-foreground)] shadow-warm hover:brightness-110 transition"
+              >
+                Email my roof details →
+              </a>
+              <p className="text-xs text-white/50 text-center">No obligation. Answer in 48 hours.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
 }
+
 
 
 function Footer() {
