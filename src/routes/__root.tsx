@@ -78,21 +78,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Detroit Roof Renewal — Add 15 Years to Your Shingles" },
+      { title: "Detroit Roof Renewal — Add 10 Years to Your Shingles" },
       {
         name: "description",
         content:
           "Professional asphalt shingle rejuvenation spray. Restore flexibility, prevent granule loss, and extend your roof's life for a fraction of replacement cost.",
       },
       { name: "author", content: "Detroit Roof Renewal" },
-      { property: "og:title", content: "Detroit Roof Renewal — Add 15 Years to Your Shingles" },
+      { property: "og:title", content: "Detroit Roof Renewal — Add 10 Years to Your Shingles" },
       {
         property: "og:description",
         content:
-          "Restore aging asphalt shingles with a bio-based rejuvenation spray. 5-year warranty. Save up to 85% vs. replacement.",
+          "Professional asphalt shingle rejuvenation spray. Restore flexibility, prevent granule loss, and extend your roof's life for a fraction of replacement cost.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Detroit Roof Renewal — Add 10 Years to Your Shingles" },
+      { name: "twitter:description", content: "Professional asphalt shingle rejuvenation spray. Restore flexibility, prevent granule loss, and extend your roof's life for a fraction of replacement cost." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1f860e4c-0feb-4629-a968-83256b51d4cb/id-preview-2e4c450c--fb481dfd-4de3-44ba-ab77-a7b687696333.lovable.app-1785617046891.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1f860e4c-0feb-4629-a968-83256b51d4cb/id-preview-2e4c450c--fb481dfd-4de3-44ba-ab77-a7b687696333.lovable.app-1785617046891.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
