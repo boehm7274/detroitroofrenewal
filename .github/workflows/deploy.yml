@@ -31,11 +31,27 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Render static HTML from the built server
+        run: |
+          set -e
+          npx wrangler --cwd ./dist dev --port 8788 --local > /tmp/wrangler.log 2>&1 &
+          for i in $(seq 1 60); do
+            curl -sf -o /dev/null http://127.0.0.1:8788/ && break
+            sleep 2
+          done
+          mkdir -p _site
+          cp -r dist/client/. _site/
+          curl -sf http://127.0.0.1:8788/ -o _site/index.html
+          cp _site/index.html _site/404.html
+          touch _site/.nojekyll
+          test -s _site/index.html
+          kill %1 || true
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: '.output/public'
+          path: '_site'
 
   deploy:
     needs: build
