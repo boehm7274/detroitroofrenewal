@@ -381,7 +381,7 @@ function CTA() {
                     disabled={pending}
                     className="w-full rounded-full bg-[var(--ember)] px-6 py-4 text-sm font-semibold text-[var(--ember-foreground)] shadow-warm hover:brightness-110 transition disabled:opacity-60"
                   >
-                    {pending ? "Sending…" : "Get my free satellite scan →"}
+                    {pending ? "Sending…" : "Get my free roof scan →"}
                   </button>
                   <p className="text-xs text-white/50 text-center">No obligation. Answer in 48 hours.</p>
                 </form>
