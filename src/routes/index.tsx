@@ -345,7 +345,7 @@ function CTA() {
           <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-gradient-sunset opacity-40 blur-3xl" aria-hidden />
           <div className="relative grid md:grid-cols-12 gap-10 items-center">
             <div className="md:col-span-7">
-              <p className="text-xs uppercase tracking-[0.25em] text-[var(--ember)] font-medium">Free satellite scan</p>
+              <p className="text-xs uppercase tracking-[0.25em] text-[var(--ember)] font-medium">Free roof scan</p>
               <h2 className="mt-4 font-display text-4xl md:text-6xl leading-[1] text-balance">
                 See if your roof qualifies.
               </h2>
