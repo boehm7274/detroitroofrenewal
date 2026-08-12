@@ -39,7 +39,7 @@ function Nav() {
           href="#quote"
           className="inline-flex items-center gap-2 rounded-full bg-[var(--ember)] px-5 py-2.5 text-sm font-medium text-[var(--ember-foreground)] shadow-warm hover:brightness-110 transition"
         >
-          Free satellite roof scan →
+          Get my free roof scan →
         </a>
       </div>
     </header>
@@ -76,7 +76,7 @@ function Hero() {
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a href="#quote" className="rounded-full bg-[var(--ember)] px-7 py-4 text-sm font-semibold text-[var(--ember-foreground)] shadow-warm hover:brightness-110 transition">
-              Get my free satellite scan
+              Get my free roof scan
             </a>
             <a href="#how" className="rounded-full border border-white/25 px-7 py-4 text-sm font-medium hover:bg-white/10 transition">
               See how it works
@@ -170,7 +170,7 @@ function BeforeAfter() {
 
 function HowItWorks() {
   const steps = [
-    { n: "01", t: "Free satellite roof scan", d: "We pull high-resolution Google Maps satellite imagery of your home and grade every slope remotely — no ladder, no one on your property, no sales pressure. In-person inspections are available as a paid add-on." },
+    { n: "01", t: "Free roof scan", d: "We pull high-resolution Google Maps satellite imagery of your home and grade every slope remotely — no ladder, no one on your property, no sales pressure. In-person inspections are available as a paid add-on." },
     { n: "02", t: "Precision spray application", d: "A certified tech applies our bio-based formula in a fine, even mist. Done in 2–3 hours." },
     { n: "03", t: "Cure & protect", d: "The treatment absorbs into the asphalt in under 90 minutes, restoring flexibility for 5–10 years." },
     { n: "04", t: "Reapply as needed", d: "Repeat treatments over the roof's life cost a fraction of a single replacement." },
@@ -345,7 +345,7 @@ function CTA() {
           <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-gradient-sunset opacity-40 blur-3xl" aria-hidden />
           <div className="relative grid md:grid-cols-12 gap-10 items-center">
             <div className="md:col-span-7">
-              <p className="text-xs uppercase tracking-[0.25em] text-[var(--ember)] font-medium">Free satellite scan</p>
+              <p className="text-xs uppercase tracking-[0.25em] text-[var(--ember)] font-medium">Free roof scan</p>
               <h2 className="mt-4 font-display text-4xl md:text-6xl leading-[1] text-balance">
                 See if your roof qualifies.
               </h2>
@@ -381,7 +381,7 @@ function CTA() {
                     disabled={pending}
                     className="w-full rounded-full bg-[var(--ember)] px-6 py-4 text-sm font-semibold text-[var(--ember-foreground)] shadow-warm hover:brightness-110 transition disabled:opacity-60"
                   >
-                    {pending ? "Sending…" : "Get my free satellite scan →"}
+                    {pending ? "Sending…" : "Get my free roof scan →"}
                   </button>
                   <p className="text-xs text-white/50 text-center">No obligation. Answer in 48 hours.</p>
                 </form>
