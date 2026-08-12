@@ -76,7 +76,7 @@ function Hero() {
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a href="#quote" className="rounded-full bg-[var(--ember)] px-7 py-4 text-sm font-semibold text-[var(--ember-foreground)] shadow-warm hover:brightness-110 transition">
-              Get my free satellite scan
+              Get my free roof scan
             </a>
             <a href="#how" className="rounded-full border border-white/25 px-7 py-4 text-sm font-medium hover:bg-white/10 transition">
               See how it works
