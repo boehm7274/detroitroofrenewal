@@ -39,7 +39,7 @@ function Nav() {
           href="#quote"
           className="inline-flex items-center gap-2 rounded-full bg-[var(--ember)] px-5 py-2.5 text-sm font-medium text-[var(--ember-foreground)] shadow-warm hover:brightness-110 transition"
         >
-          Free satellite roof scan →
+          Get my free roof scan →
         </a>
       </div>
     </header>
