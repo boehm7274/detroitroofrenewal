@@ -469,10 +469,11 @@ function Index() {
       <BeforeAfter />
       <HowItWorks />
       <Compare />
-      <Testimonial />
+      <WhyChooseUs />
       <FAQ />
       <CTA />
       <Footer />
+
     </main>
   );
 }
