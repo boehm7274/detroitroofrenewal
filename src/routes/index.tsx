@@ -473,7 +473,7 @@ function Index() {
       <FAQ />
       <CTA />
       <Footer />
-
     </main>
+
   );
 }
