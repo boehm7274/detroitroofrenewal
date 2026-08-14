@@ -252,25 +252,54 @@ function Compare() {
   );
 }
 
-function Testimonial() {
+function WhyChooseUs() {
+  const reasons = [
+    {
+      t: "Priced like maintenance, not a contractor",
+      d: "We list the work as routine roof maintenance rather than a full roofing contract, so we don't have to charge contractor-level rates. You get the same results for a fraction of the price."
+    },
+    {
+      t: "Bio-based soy spray — not a coating",
+      d: "Our treatment is made from a renewable, bio-based soy formula. It penetrates the asphalt instead of sitting on top, restoring the oils that keep shingles flexible and waterproof."
+    },
+    {
+      t: "Free satellite scan, no strangers on your roof",
+      d: "We grade every slope from Google Maps satellite imagery first. No sales pressure, no ladders, and no one on your property unless you ask for a paid inspection."
+    },
+    {
+      t: "Licensed & insured in Michigan",
+      d: "We're a local Michigan company, fully licensed and insured, so your home is protected while we work."
+    },
+  ];
+
   return (
-    <section className="bg-background py-24 md:py-32">
-      <div className="mx-auto max-w-4xl px-6 text-center">
-        <p className="text-xs uppercase tracking-[0.25em] text-[var(--ember)] font-medium">Homeowners</p>
-        <blockquote className="mt-8 font-display text-3xl md:text-5xl leading-tight text-balance">
-          <span className="text-[var(--ember)]">“</span>My roof shingles went from cracking and dried out to brand new in a matter of hours, and it cost a fraction of what a completely new roof would cost.<span className="text-[var(--ember)]">”</span>
-        </blockquote>
-        <div className="mt-10 flex items-center justify-center gap-4">
-          <div className="h-12 w-12 rounded-full bg-gradient-sunset" />
-          <div className="text-left">
-            <div className="font-semibold">Chris</div>
-            <div className="text-sm text-muted-foreground">Homeowner · Chesterfield, MI</div>
-          </div>
+    <section className="bg-primary text-primary-foreground py-24 md:py-32">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="max-w-3xl">
+          <p className="text-xs uppercase tracking-[0.25em] text-[var(--ember)] font-medium">Why Detroit Roof Renewal</p>
+          <h2 className="mt-4 font-display text-4xl md:text-5xl leading-tight text-balance">
+            Same roof, same protection — without the replacement price.
+          </h2>
+        </div>
+
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          {reasons.map((r) => (
+            <div key={r.t} className="rounded-2xl border border-white/10 bg-white/5 p-8">
+              <div className="h-10 w-10 rounded-full bg-[var(--ember)]/20 flex items-center justify-center text-[var(--ember)] mb-5">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+              </div>
+              <h3 className="font-display text-2xl leading-tight">{r.t}</h3>
+              <p className="mt-3 text-white/70 leading-relaxed">{r.d}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
   );
 }
+
 
 function FAQ() {
   const faqs = [
@@ -440,10 +469,11 @@ function Index() {
       <BeforeAfter />
       <HowItWorks />
       <Compare />
-      <Testimonial />
+      <WhyChooseUs />
       <FAQ />
       <CTA />
       <Footer />
     </main>
+
   );
 }
