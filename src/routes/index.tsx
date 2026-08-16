@@ -185,7 +185,7 @@ function HowItWorks() {
               Four steps. One roof. Years more life.
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              Our applicators are trained and insured. Every scan uses up-to-date Google Maps satellite imagery first. When we arrive at your property for the treatment, we perform a routine in-person inspection as part of the visit, so a separate paid ladder inspection is unnecessary. Every job is documented with before/after imagery you keep for your records.
+              Our applicators are trained and insured. Every scan uses up-to-date Google Maps satellite imagery first. When we arrive at your property for the treatment, we perform a routine in-person inspection as part of the visit. Every job is documented with before/after imagery you keep for your records.
             </p>
             <div className="mt-10 overflow-hidden rounded-2xl border border-border">
               <img
@@ -264,7 +264,7 @@ function WhyChooseUs() {
     },
     {
       t: "Free satellite scan, no strangers on your roof",
-      d: "We grade every slope from Google Maps satellite imagery first. No sales pressure, no ladders, and no one on your property until we arrive to apply the treatment — when we do a routine in-person inspection on-site, so a separate paid add-on is unnecessary."
+      d: "We grade every slope from Google Maps satellite imagery first. No sales pressure, no ladders, and no one on your property until we arrive to apply the treatment — when we do a routine in-person inspection on-site."
     },
     {
       t: "Licensed & insured in Michigan",
@@ -305,7 +305,7 @@ function FAQ() {
   const faqs = [
     { q: "Does the spray actually work, or is it a coating?", a: "It's not a coating — coatings sit on top and eventually peel. Our treatment is a bio-based penetrating agent that soaks into the asphalt and replaces the maltenes (oils) that UV has cooked out over the years." },
     { q: "Is it safe for my kids, pets, and landscaping?", a: "Yes. The formula is soy-based, biodegradable, and carries an Environmentally Safer Choice designation. There's no toxic runoff, so your plants, pets, and family stay safe." },
-    { q: "What if my roof is too far gone?", a: "During the free satellite scan we grade every slope using Google Maps imagery. If your shingles are cracked-through or missing granules to the mat, we'll tell you honestly — no treatment, no charge. When we arrive at your property to apply the treatment, we also do a routine in-person inspection, so there's no point in having a paid add-on inspection." },
+    { q: "What if my roof is too far gone?", a: "During the free satellite scan we grade every slope using Google Maps imagery. If your shingles are cracked-through or missing granules to the mat, we'll tell you honestly — no treatment, no charge. When we arrive at your property to apply the treatment, we also do a routine in-person inspection." },
     { q: "How long does a treatment last?", a: "5–10 years, depending on your roof's exposure and condition. Most homeowners re-treat within that window to keep their shingles flexible and waterproof." },
   ];
   return (
@@ -381,7 +381,7 @@ function CTA() {
               <p className="mt-6 max-w-md text-white/75 leading-relaxed">
                 Enter your name, property address, and email. We'll pull satellite imagery of your roof,
                 grade every slope, and send a straight answer within 48 hours — no one steps on your
-                property. When we arrive to apply the treatment, we do a routine in-person inspection on-site, so there's no point in having a paid add-on inspection.
+                property. When we arrive to apply the treatment, we do a routine in-person inspection on-site.
               </p>
               <p className="mt-6 text-sm text-white/60">
                 Prefer to talk?{" "}
@@ -439,7 +439,7 @@ function Footer() {
           <div className="text-xs uppercase tracking-widest text-white/50">Contact</div>
           <ul className="mt-4 space-y-2 text-sm text-white/80">
             <li>(810) 294-4909</li>
-            <li>hello@detroitroofrenewal.com</li>
+            <li>solutions@detroitroofrenewal.com</li>
             <li>Mon, Wed, Fri · 9am–5pm</li>
           </ul>
         </div>
