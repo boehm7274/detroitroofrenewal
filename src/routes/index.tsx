@@ -170,7 +170,7 @@ function BeforeAfter() {
 
 function HowItWorks() {
   const steps = [
-    { n: "01", t: "Free roof scan", d: "We pull high-resolution Google Maps satellite imagery of your home and grade every slope remotely — no ladder, no one on your property, no sales pressure. In-person inspections are available as a paid add-on." },
+    { n: "01", t: "Free roof scan", d: "We pull high-resolution Google Maps satellite imagery of your home and grade every slope remotely — no ladder, no one on your property, no sales pressure. When we arrive to apply the treatment, we do a routine in-person inspection, so there's no point in paying for a separate add-on inspection." },
     { n: "02", t: "Precision spray application", d: "A certified tech applies our bio-based formula in a fine, even mist. Done in 2–3 hours." },
     { n: "03", t: "Cure & protect", d: "The treatment absorbs into the asphalt in under 90 minutes, restoring flexibility for 5–10 years." },
     { n: "04", t: "Reapply as needed", d: "Repeat treatments over the roof's life cost a fraction of a single replacement." },
@@ -185,7 +185,7 @@ function HowItWorks() {
               Four steps. One roof. Years more life.
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              Our applicators are trained and insured. Every scan uses up-to-date Google Maps satellite imagery — paid in-person ladder inspections are available on request. Every job is documented with before/after imagery you keep for your records.
+              Our applicators are trained and insured. Every scan uses up-to-date Google Maps satellite imagery first. When we arrive at your property for the treatment, we perform a routine in-person inspection as part of the visit, so a separate paid ladder inspection is unnecessary. Every job is documented with before/after imagery you keep for your records.
             </p>
             <div className="mt-10 overflow-hidden rounded-2xl border border-border">
               <img
@@ -264,7 +264,7 @@ function WhyChooseUs() {
     },
     {
       t: "Free satellite scan, no strangers on your roof",
-      d: "We grade every slope from Google Maps satellite imagery first. No sales pressure, no ladders, and no one on your property unless you ask for a paid inspection."
+      d: "We grade every slope from Google Maps satellite imagery first. No sales pressure, no ladders, and no one on your property until we arrive to apply the treatment — when we do a routine in-person inspection on-site, so a separate paid add-on is unnecessary."
     },
     {
       t: "Licensed & insured in Michigan",
@@ -305,7 +305,7 @@ function FAQ() {
   const faqs = [
     { q: "Does the spray actually work, or is it a coating?", a: "It's not a coating — coatings sit on top and eventually peel. Our treatment is a bio-based penetrating agent that soaks into the asphalt and replaces the maltenes (oils) that UV has cooked out over the years." },
     { q: "Is it safe for my kids, pets, and landscaping?", a: "Yes. The formula is soy-based, biodegradable, and carries an Environmentally Safer Choice designation. There's no toxic runoff, so your plants, pets, and family stay safe." },
-    { q: "What if my roof is too far gone?", a: "During the free satellite scan we grade every slope using Google Maps imagery. If your shingles are cracked-through or missing granules to the mat, we'll tell you honestly — no treatment, no charge. Prefer eyes-on-the-roof? A paid in-person inspection is available." },
+    { q: "What if my roof is too far gone?", a: "During the free satellite scan we grade every slope using Google Maps imagery. If your shingles are cracked-through or missing granules to the mat, we'll tell you honestly — no treatment, no charge. When we arrive at your property to apply the treatment, we also do a routine in-person inspection, so there's no point in having a paid add-on inspection." },
     { q: "How long does a treatment last?", a: "5–10 years, depending on your roof's exposure and condition. Most homeowners re-treat within that window to keep their shingles flexible and waterproof." },
   ];
   return (
@@ -381,14 +381,14 @@ function CTA() {
               <p className="mt-6 max-w-md text-white/75 leading-relaxed">
                 Enter your name, property address, and email. We'll pull satellite imagery of your roof,
                 grade every slope, and send a straight answer within 48 hours — no one steps on your
-                property. In-person inspections available as a paid add-on.
+                property. When we arrive to apply the treatment, we do a routine in-person inspection on-site, so there's no point in having a paid add-on inspection.
               </p>
               <p className="mt-6 text-sm text-white/60">
                 Prefer to talk?{" "}
                 <a href="tel:+18102944909" className="font-semibold text-[var(--ember)]">
                   (810) 294-4909
                 </a>{" "}
-                · Mon–Sat 10am–5pm
+                · Mon, Wed, Fri · 9am–5pm
               </p>
             </div>
 
@@ -440,7 +440,7 @@ function Footer() {
           <ul className="mt-4 space-y-2 text-sm text-white/80">
             <li>(810) 294-4909</li>
             <li>hello@detroitroofrenewal.com</li>
-            <li>Mon–Sat · 10am–5pm</li>
+            <li>Mon, Wed, Fri · 9am–5pm</li>
           </ul>
         </div>
         <div>
