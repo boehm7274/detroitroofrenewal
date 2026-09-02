@@ -217,7 +217,7 @@ function HowItWorks() {
 
 function Compare() {
   const rows = [
-    ["Cost for 2,500 sq ft home", "$2,500 avg", "$18,000+"],
+    ["Cost per square foot", "$0.90 / sq ft", "$18,000+"],
     ["Time on site", "2–3 hours", "3–5 days"],
     ["Tear-off waste to landfill", "Zero", "~5 tons"],
     
