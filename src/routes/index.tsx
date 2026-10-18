@@ -114,7 +114,7 @@ function Problem() {
           <div className="md:col-span-5">
             <p className="text-xs uppercase tracking-[0.25em] text-[var(--ember)] font-medium">The problem</p>
             <h2 className="mt-4 font-display text-4xl md:text-5xl leading-tight text-balance">
-              Your roof isn't broken. It's <em className="italic">thirsty</em>.
+              Your shingles are <em className="italic">drying out</em>, not wearing out.
             </h2>
           </div>
           <div className="md:col-span-6 md:col-start-7">
