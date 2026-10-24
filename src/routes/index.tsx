@@ -119,7 +119,7 @@ function Problem() {
           </div>
           <div className="md:col-span-6 md:col-start-7">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Asphalt shingles fail because they lose the volatile oils that keep them flexible and waterproof — not because they've physically worn out. Replace those oils and the shingle behaves like new.
+              Asphalt shingles fail because they lose the volatile oils that keep them flexible and waterproof, not because they've physically worn out. Replace those oils and the shingle behaves like new.
             </p>
           </div>
         </div>
