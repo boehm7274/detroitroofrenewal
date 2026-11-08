@@ -388,7 +388,7 @@ function CTA() {
                 <a href="tel:+18102944909" className="font-semibold text-[var(--ember)]">
                   (810) 294-4909
                 </a>{" "}
-                · Mon, Wed, Fri · 9am–5pm
+                · Monday–Sunday · 24 hours a day
               </p>
             </div>
 
@@ -440,7 +440,7 @@ function Footer() {
           <ul className="mt-4 space-y-2 text-sm text-white/80">
             <li>(810) 294-4909</li>
             <li>solutions@detroitroofrenewal.com</li>
-            <li>Mon, Wed, Fri · 9am–5pm</li>
+            <li>Monday–Sunday · 24 hours a day</li>
           </ul>
         </div>
         <div>
