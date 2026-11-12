@@ -278,7 +278,7 @@ function WhyChooseUs() {
         <div className="max-w-3xl">
           <p className="text-xs uppercase tracking-[0.25em] text-[var(--ember)] font-medium">Why Detroit Roof Renewal</p>
           <h2 className="mt-4 font-display text-4xl md:text-5xl leading-tight text-balance">
-            Same roof, same protection — without the replacement price.
+            Same roof, same protection, without the replacement price.
           </h2>
         </div>
 
